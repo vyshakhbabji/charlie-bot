@@ -5,7 +5,7 @@ module.exports = (robot) ->
     msg.send message 
 
   robot.respond /charlie$/i, (msg) ->
-    msg.send "斉藤サイクル"
+    msg.send "斉藤サイクル:bicyclist:"
 
   robot.respond /pain/i, (msg) ->
     pains = ['階段から落ちて手首を切る', 
