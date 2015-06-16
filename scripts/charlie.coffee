@@ -5,10 +5,10 @@ module.exports = (robot) ->
     msg.send message 
 
   robot.respond /charlie$/i, (msg) ->
-    msg.send "斉藤サイクル"
+    msg.send "斉藤サイクル:bicyclist:"
 
   robot.respond /pain/i, (msg) ->
-    pain = ['階段から落ちて手首を切る', 
+    pains = ['階段から落ちて手首を切る', 
 　　　　　　'おしりにマイナスドライバーがささる', 
 　　　　　　'左足人差し指の爪が剥がれる', 
 　　　　　　'気づいたら右手の中指が折れてました']
