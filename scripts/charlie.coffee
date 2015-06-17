@@ -1,7 +1,7 @@
 module.exports = (robot) ->
   robot.respond /help$/i, (msg) ->
     message = "charlie-bot charlie 生存確認\n"
-    message += "charlie-bot あいさつ系 おはようとかなら返せます\n"
+    message += "あいさつ系 おはようとかならbot宛でなくても返します\n"
     message += "charlie-bot pain 痛い話をします\n"
     message += "charlie-bot (sushi|寿司|すし) 寿司を握ってくれます\n"
     message += "charlie-bot select(.+) charlieが選んでくれます(選択肢の区切りは[　・、,\s]からどうぞ)\n"
@@ -11,7 +11,7 @@ module.exports = (robot) ->
   robot.respond /charlie$/i, (msg) ->
     msg.send "斉藤サイクル:bicyclist:"
 
-  robot.respond /(おはよう|おはよー|こんにちは|こんばんは|Hi|hello|お疲れ様|おつ|おつかれさま)/i, (msg) ->
+  robot.hear /(おはよう|おはよー|こんにちは|こんばんは|Hi|hello|お疲れ様|おつ|おつかれさま)/i, (msg) ->
     message = msg.match[1]
     msg.reply message
 
